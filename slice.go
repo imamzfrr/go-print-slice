@@ -8,6 +8,13 @@ func PrintSlice(slice []int) {
 	}
 }
 
+func PrintSliceString(slice []interface{}) {
+	for _, val := range slice {
+		fmt.Printf("%v ", val)
+	}
+	fmt.Println()
+}
+
 func PrintSlice2(slice [][]int) {
 	for _, rows := range slice {
 		for _, val := range rows {
